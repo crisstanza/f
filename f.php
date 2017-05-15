@@ -478,6 +478,21 @@ abstract class E {
 		return empty($str) ? '' : '=?UTF-8?B?'.base64_encode($str).'?=';
 	}
 
+	abstract class U {
+
+		public static function escape(&$value) {
+			return urlencode($value);
+		}
+	}
+
+	abstract class H {
+
+		public static function escape(&$value) {
+			$value = str_replace('"', '&quot;', $value);
+			return $value;
+		}
+	}
+
 }
 
 ?>
