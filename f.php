@@ -164,7 +164,7 @@ abstract class N {
 
 }
 
-abstract class D {
+abstract class DB {
 
 	/*
 		Códigos de erro conhecidos:
